@@ -1,0 +1,17 @@
+		<script>
+			$(document).ready(function(){
+				$(function(){
+					var $nav=$("#mainNav");
+					$nav.hide();
+					$(document).scroll(function(){
+						if ($(this).scrollTop() > 100) {
+							$nav.fadeIn();
+						} else {
+							$nav.fadeOut();
+						}
+					
+
+					});
+				});
+			});	
+		</script>

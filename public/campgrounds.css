@@ -1,0 +1,99 @@
+
+.container{
+	max-width:1290px;
+	margin:0 auto;
+}
+body{
+	background-image:url("https://images.unsplash.com/photo-1507084479072-f6ebe14beb68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1782&q=80") !important;
+	background-repeat:no-repeat !important;
+	background-position:center !important;
+	background-size:cover !important;
+	font-family: 'Roboto', sans-serif;
+}
+
+.jumbotron{
+	line-spacing:1.5;
+	background:rgb(230, 230, 230,0.45);
+	padding: 20px;
+	margin-top:60px;
+}
+
+@media screen and (max-width:768){
+	.jumbotron{
+		background:rgb(230, 230, 230,0.05);;
+	}
+}
+
+
+.card{
+	outline:none;
+	border:none;
+	padding-bottom:none;
+} 
+.card-body{
+	padding:0.75rem;
+}
+
+.btn:focus{
+	box-shadow:none !important;
+}
+/* .like-btn-svg {
+  width: 80px;
+  height: 100px;
+  position: absolute;
+  left: 25px;
+  bottom: -112px;
+  transform: translate(-50%, -50%);
+  background: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png) no-repeat !important;
+  background-position: 0 0;
+  animation: fave-like-btn-svg 1s steps(28);
+  cursor: pointer;
+}
+
+.like-btn-svg:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+
+@keyframes fave-like-btn-svg {
+  0% {
+    background-position: 2800px 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+} */
+
+.btn-sm{
+	border:1.3px solid currentcolor;
+	font-weight:550;
+	padding:.15rem .5rem;
+	font-size:1.2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,100 @@
+<%- include("partials/header")%>
+<link rel="stylesheet" href="/campgrounds.css">
+</head>
+<body>
+	<%- include("partials/nav")%>	
+
+	
+	
+	<div class="container">
+		<header class="jumbotron">
+			<h1 class=" display-sm-3 display-lg-2 display-4">Welcome to YelpCamp</h1>
+			<p class="lead">View our hand-picked camgrounds from all over the world!</p>
+			<a href="/campgrounds/new" class="btn btn-primary">Add New Campground</a>
+
+		</header>
+		
+
+
+
+
+		<div class="row">
+
+			<%campGrounds.forEach(function(campground){%>
+			<div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 d-flex justify-content-between">
+				<div class="ui raised card mx-auto mb-3" style="color:white;background:none;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 26,0.5)">
+			<!-- <div class="flipbox">
+				<div class="flip-box-inner"> -->
+					<!-- <div class="flip-box-front"> -->
+						<img class="image" src="<%=campground.image%>">
+						<div class="content border-top-0" style="background:rgb(255, 187, 153,0.3)">
+							<h5 class="header"><%=campground.name%></h5>
+							<p class="description" style="font-weight:400:text-shadow:2px 1 pxrgba(115,115,115,0.3)">
+								<%=campground.description%>
+							</p>
+							<p class="meta">	
+								<small><i class="fas fa-map-marker-alt mr-1"></i>
+									<%=campground.location%></small>
+							</p>
+							<div class="extra-content">
+
+								<button class="btn btn-outline-danger btn-sm mr-2 like" 
+									style="font-size:1.37rem;padding:0.025rem 0.4rem;">
+									<i class="fab fa-free-code-camp"></i>
+								</button>
+
+								<button class="btn btn-outline-info btn-sm comment" style="font-size:1.2rem">
+									<i class="far fa-comment"></i>
+								</button>
+
+							</div>
+						</div> 
+						<!-- </div>	 -->
+					<!-- <div class="flip-box-back">
+						hello!
+					</div> -->
+				<!-- </div>	
+				-->
+				<!--  </div>	 -->
+			</div> 
+		</div>	
+		
+
+		
+		
+		<%});%>
+		
+	</div>
+</div>
+
+
+
+
+
+<%- include("partials/footer")%>
+<script>
+	$(document).ready(function(){
+
+			// hide .navbar first
+			$("#mainNav").hide();
+
+			// fade in #mainNav
+
+			$(window).scroll(function () {
+
+						 // set distance user needs to scroll before we start fadeIn
+						 $(this).scrollTop() > $("#mainNav").height() ? $('#mainNav').fadeIn(): $('#mainNav').fadeOut();
+						 
+						});
+			
+
+		});
+	
+		// document.querySelectorAll(".btn-sm").addEventListener("click",function(){
+		// 	this.classList.toggle("btn-danger");
+		// })
+	</script>
+
+</body>
+</html>	
+
